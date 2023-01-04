@@ -1,19 +1,57 @@
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 .hero,
 .footer {
     background: #1F2937;
     color: #F9FAF8;
 }
 
+.container {
+    padding: 0 100px;
+}
+
 .header .container {
     height: 60px;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.main .container {
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.main .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .content h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+}
+
+.main .content p {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.main .content button {
+    align-self: flex-start;
+    margin-top: 10px;
+    padding: 5px 25px;
+    border-radius: 10px;
+}
+
+.main img {
+    flex: 1;
+    text-align: center;
+    background: grey;
 }
 
 .header .logo {
@@ -34,23 +72,24 @@ a {
     font-size: 18px;
 }
 
-.main .container {
-    display: flex;
-}
 
-h1 {
-    font-size: 48px;
-    font-weight: 800;
-}
 
-p {
-    font-size: 18px;
-}
+
+
 
 button,
 .action-time {
     background: #3882F6;
     color: #F9FAF8;
+}
+
+
+a:hover {
+    color: #3882F6;
+}
+
+button a:hover{
+    color: #1F2937
 }
 
 .information .container {
@@ -85,3 +124,6 @@ button,
     display: flex;
 }
 
+.footer {
+    text-align: center;
+}
