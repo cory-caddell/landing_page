@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero,
+.footer {
+    background: #1F2937;
+    color: #F9FAF8;
+}
+
+.header .container {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.header .logo {
+    font-size: 24px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #F9FAF8;
+    font-size: 18px;
+}
+
+.main .container {
+    display: flex;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+p {
+    font-size: 18px;
+}
+
+button,
+.action-time {
+    background: #3882F6;
+    color: #F9FAF8;
+}
+
+.information .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxes {
+    display: flex;
+}
+
+.quote .container {
+    background: #E5E7EB;
+    color: #1F2937;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote .testomonial {
+    font-size: 36px;
+    font-style: light italic;
+}
+
+.quote .signature {
+    font-size: 24px;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+.action-time .container {
+    display: flex;
+}
+
