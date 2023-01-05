@@ -15,6 +15,24 @@
     align-items: center;
 }
 
+.header .logo {
+    font-size: 24px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #F9FAF8;
+    font-size: 18px;
+}
+
 .main .container {
     padding: 100px;
     display: flex;
@@ -55,28 +73,67 @@
     background: grey;
 }
 
-.header .logo {
-    font-size: 24px;
+.information .container {
+    color: #1F2937;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-ul {
-    list-style-type: none;
+.information h2 {
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.information .boxes {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.information .box {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 125px;
+    text-align: center;
+}
+
+.information .box img {
+    height: 100px;
+    border-color: #3882F6;
+    border-style: solid;
+    border-radius: 8px;
+}
+
+.information .box p {
     margin: 0;
     padding: 0;
+}
+
+.quote {
+    background: #E5E7EB;
+    color: #1F2937;
+}
+
+.quote .container {
+    padding: 0 235px;
     display: flex;
-    gap: 20px;
+    flex-direction: column;
 }
 
-a {
-    text-decoration: none;
-    color: #F9FAF8;
-    font-size: 18px;
+.quote .testomonial {
+    padding: 0;
+    margin: 0;
+    font-size: 36px;
 }
 
-
-
-
-
+.quote .signature {
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    align-self: flex-end;
+}
 
 button,
 .action-time {
@@ -93,33 +150,7 @@ button a:hover{
     color: #1F2937
 }
 
-.information .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.boxes {
-    display: flex;
-}
-
-.quote .container {
-    background: #E5E7EB;
-    color: #1F2937;
-    display: flex;
-    flex-direction: column;
-}
-
-.quote .testomonial {
-    font-size: 36px;
-    font-style: light italic;
-}
-
-.quote .signature {
-    font-size: 24px;
-    font-weight: bold;
-    align-self: flex-end;
-}
 
 .action-time .container {
     display: flex;
