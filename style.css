@@ -1,15 +1,62 @@
-.hero,
-.footer {
-    background: #1F2937;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     color: #F9FAF8;
 }
 
+.hero,
+.information,
+.quote,
+.action-time {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.header,
+.hero,
+.footer {
+    background: #1F2937;
+}
+
+
+.header .container,
+.footer .container {
+    height: 60px;    
+}
+
 .container {
-    padding: 0 100px;
+        /* padding: 0 100px; */
+        
+}
+
+button {
+    background: #3882F6;
+    margin-top: 10px;
+    padding: 5px 25px;
+    border-radius: 10px;
+}
+
+a:hover {
+    color: #3882F6;
+}
+
+button a:hover{
+    color: #1F2937
 }
 
 .header .container {
-    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,43 +80,38 @@ a {
     font-size: 18px;
 }
 
-.main .container {
-    padding: 100px;
+.hero .container {
     display: flex;
     justify-content: center;
     gap: 50px;
 }
 
-.main .content {
+.hero .content {
     flex: 1;
     display: flex;
     flex-direction: column;
 }
 
-.main .content h1 {
+.hero .content h1 {
     font-size: 48px;
     font-weight: 800;
     margin: 0;
     padding: 0;
 }
 
-.main .content p {
+.hero .content p {
     font-size: 18px;
     margin: 0;
     padding: 0;
 }
 
-.main .content button {
+.hero .content button {
     align-self: flex-start;
-    margin-top: 10px;
-    padding: 5px 25px;
-    border-radius: 10px;
 }
 
-.main img {
+.hero img {
     flex: 1;
     text-align: center;
-    line-height: 175px;
     background: grey;
 }
 
@@ -135,27 +177,34 @@ a {
     align-self: flex-end;
 }
 
-button,
 .action-time {
-    background: #3882F6;
-    color: #F9FAF8;
+    align-self: center;
+    border-style: solid;
+    border-color: #3882F6;
+    border-radius: 8px;
 }
-
-
-a:hover {
-    color: #3882F6;
-}
-
-button a:hover{
-    color: #1F2937
-}
-
-
 
 .action-time .container {
+    background: #3882F6;
+    color: #E5E7EB;
     display: flex;
+    justify-content: space-between;
 }
 
-.footer {
-    text-align: center;
+.action-time p {
+    margin: 0;
+    padding: 0;
 }
+
+.action-time button {
+    border-style: solid;
+    border-color:#E5E7EB
+}
+
+.footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
