@@ -19,9 +19,24 @@ body {
 .information,
 .quote,
 .action-time {
-    flex: 1;
     display: flex;
     align-items: center;
+}
+
+.hero {
+    flex: 1 1 335px;
+}
+
+.information {
+    flex: 1 1 385px;
+}
+
+.quote {
+    flex: 1 1 325px;
+}
+
+.action-time {
+    flex: 1 1 275px;
 }
 
 .header,
@@ -33,12 +48,24 @@ body {
 
 .header .container,
 .footer .container {
-    height: 60px;    
+    height: 80px;    
 }
 
 .container {
-        /* padding: 0 100px; */
-        
+    /* padding: 0 100px; */
+    flex: 1;        
+}
+
+.header,
+.hero,
+.action-time,
+.footer {
+    padding: 0 130px;
+}
+
+.information,
+.quote {
+    padding: 0 280px;
 }
 
 button {
@@ -82,7 +109,6 @@ a {
 
 .hero .container {
     display: flex;
-    justify-content: center;
     gap: 50px;
 }
 
@@ -110,9 +136,11 @@ a {
 }
 
 .hero img {
-    flex: 1;
+    margin: 0;
+    padding: 0;
     text-align: center;
     background: grey;
+    flex: 1;
 }
 
 .information .container {
@@ -120,6 +148,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 25px;
 }
 
 .information h2 {
@@ -129,14 +158,14 @@ a {
 
 .information .boxes {
     display: flex;
-    justify-content: center;
-    gap: 50px;
+    justify-content: space-between;
 }
 
 .information .box {
     display: flex;
     flex-direction: column;
-    flex-basis: 125px;
+    gap: 5px;
+    flex-basis: 150px;
     text-align: center;
 }
 
@@ -158,7 +187,6 @@ a {
 }
 
 .quote .container {
-    padding: 0 235px;
     display: flex;
     flex-direction: column;
 }
@@ -167,6 +195,7 @@ a {
     padding: 0;
     margin: 0;
     font-size: 36px;
+    font-weight: 300;
 }
 
 .quote .signature {
@@ -177,28 +206,27 @@ a {
     align-self: flex-end;
 }
 
-.action-time {
-    align-self: center;
+.action-time .container {
+    height: 40%;
+    padding: 0 150px;
+    background: #3882F6;
+    color: #E5E7EB;
     border-style: solid;
     border-color: #3882F6;
     border-radius: 8px;
-}
-
-.action-time .container {
-    background: #3882F6;
-    color: #E5E7EB;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.action-time p {
-    margin: 0;
-    padding: 0;
+.action-time .text {
+    display: flex;
+    flex-direction: column;
 }
 
 .action-time button {
     border-style: solid;
-    border-color:#E5E7EB
+    border-color:#E5E7EB;
 }
 
 .footer .container {
