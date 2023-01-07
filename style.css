@@ -9,67 +9,228 @@
 body {
     height: 100vh;
     font-family: 'Roboto', sans-serif;
-    display: flex;
+    color: #F9FAF8;
+
+/************ set spacing for each major section ********************/
+    display: flex;                          
     flex-direction: column;
     justify-content: space-between;
-    color: #F9FAF8;
 }
 
+.header {
+    background: #1F2937;
+    flex: 0 0 80px;
+    background: red;
+
+}
+
+.hero {
+    background: #1F2937;
+    flex: 1 0 335px;
+}
+
+.information {
+    flex: 1 0 1000px;  /* 385 */
+}
+
+.quote {
+    flex: 1 0 325px;
+    background: #E5E7EB;
+}
+
+.action-time {
+    flex: 1 0 275px;
+}
+
+.footer {
+    background: #1F2937;
+    flex: 0 0 80px;
+}
+
+/*********** center main containers vertically in each major section ****************/
+
+.header,
 .hero,
 .information,
 .quote,
-.action-time {
+.action-time,
+.footer {
     display: flex;
     align-items: center;
 }
 
-.hero {
-    flex: 1 1 335px;
-}
-
-.information {
-    flex: 1 1 385px;
-}
-
-.quote {
-    flex: 1 1 325px;
-}
-
-.action-time {
-    flex: 1 1 275px;
-}
-
-.header,
-.hero,
-.footer {
-    background: #1F2937;
-}
-
-
-.header .container,
-.footer .container {
-    height: 80px;    
-}
+/************ stretch items of above containers across width of screen **************/ 
 
 .container {
-    /* padding: 0 100px; */
-    flex: 1;        
+    flex: 1;
 }
 
-.header,
-.hero,
-.action-time,
-.footer {
-    padding: 0 130px;
+/*********************************** header ******************************************/
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background: green;
 }
 
-.information,
-.quote {
-    padding: 0 280px;
+.header .logo {
+    font-size: 24px;
+}
+
+.header ul {
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+}
+
+.header a {
+    text-decoration: none;
+    color: #F9FAF8;
+    font-size: 18px;
+}
+
+/*********************************** hero ******************************************/
+
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+    background: green;
+}
+
+.hero .container .content {
+    flex-basis: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero .container .content h1 {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.hero .container .content p {
+    font-size: 18px;
+}
+
+.hero .container .content button {
+    align-self: flex-start;
+    border-color: #1F2937;
+    color: #F9FAF8;
+}
+
+.hero .container img {
+    text-align: center;
+    background: grey;
+    height: 215px;
+    width: 575px;
+}
+
+/*********************************** information ******************************************/
+
+.information .container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    color: #1F2937;
+    background-color: green;
+}
+
+.information .container h2 {
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.information .container .boxes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.information .box {
+    flex-basis: 175px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.information .box img {
+    height: 175px;
+    border-color: #3882F6;
+    border-style: solid;
+    border-radius: 8px;
+}
+
+.information .box p {
+    font-size: 18px;
+}
+
+/*********************************** quote ******************************************/
+
+.quote .container {
+    flex: 0 0 825px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #1F2937;
+    background: green;
+}
+
+.quote .testomonial {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.quote .signature {
+    padding: 0 50px;
+    font-size: 24px;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+/*********************************** action-time ******************************************/
+
+
+.action-time .container {
+    /* height: 40%; */
+    /* padding: 0 150px; */
+    background: #3882F6;
+    border-style: solid;
+    border-color: #3882F6;
+    border-radius: 8px;
+    display: flex;
+    /* justify-content: space-between;
+    align-items: center; */
+}
+
+.action-time .text {
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.action-time button {
+    border-style: solid;
+    border-color:#E5E7EB;
+}
+
+/*********************************** footer ******************************************/
+
+
+.footer .container {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    background: green;
 }
 
 button {
     background: #3882F6;
+    color: #F9FAF8;
     margin-top: 10px;
     padding: 5px 25px;
     border-radius: 10px;
@@ -82,157 +243,4 @@ a:hover {
 button a:hover{
     color: #1F2937
 }
-
-.header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header .logo {
-    font-size: 24px;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
-}
-
-a {
-    text-decoration: none;
-    color: #F9FAF8;
-    font-size: 18px;
-}
-
-.hero .container {
-    display: flex;
-    gap: 50px;
-}
-
-.hero .content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-.hero .content h1 {
-    font-size: 48px;
-    font-weight: 800;
-    margin: 0;
-    padding: 0;
-}
-
-.hero .content p {
-    font-size: 18px;
-    margin: 0;
-    padding: 0;
-}
-
-.hero .content button {
-    align-self: flex-start;
-}
-
-.hero img {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background: grey;
-    flex: 1;
-}
-
-.information .container {
-    color: #1F2937;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-}
-
-.information h2 {
-    font-size: 36px;
-    font-weight: 800;
-}
-
-.information .boxes {
-    display: flex;
-    justify-content: space-between;
-}
-
-.information .box {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    flex-basis: 150px;
-    text-align: center;
-}
-
-.information .box img {
-    height: 100px;
-    border-color: #3882F6;
-    border-style: solid;
-    border-radius: 8px;
-}
-
-.information .box p {
-    margin: 0;
-    padding: 0;
-}
-
-.quote {
-    background: #E5E7EB;
-    color: #1F2937;
-}
-
-.quote .container {
-    display: flex;
-    flex-direction: column;
-}
-
-.quote .testomonial {
-    padding: 0;
-    margin: 0;
-    font-size: 36px;
-    font-weight: 300;
-}
-
-.quote .signature {
-    padding: 0;
-    margin: 0;
-    font-size: 24px;
-    font-weight: bold;
-    align-self: flex-end;
-}
-
-.action-time .container {
-    height: 40%;
-    padding: 0 150px;
-    background: #3882F6;
-    color: #E5E7EB;
-    border-style: solid;
-    border-color: #3882F6;
-    border-radius: 8px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.action-time .text {
-    display: flex;
-    flex-direction: column;
-}
-
-.action-time button {
-    border-style: solid;
-    border-color:#E5E7EB;
-}
-
-.footer .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 
