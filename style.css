@@ -7,7 +7,6 @@
 }
 
 body {
-    height: 100vh;
     font-family: 'Roboto', sans-serif;
     color: #F9FAF8;
 
@@ -19,35 +18,33 @@ body {
 
 .header {
     background: #1F2937;
-    flex: 0 0 80px;
-    background: red;
-
+    flex: 0 0 60px;
 }
 
 .hero {
     background: #1F2937;
-    flex: 1 0 335px;
+    flex: 1 0 500px;
 }
 
 .information {
-    flex: 1 0 1000px;  /* 385 */
+    flex: 1 0 525px;  
 }
 
 .quote {
-    flex: 1 0 325px;
+    flex: 1 0 440px;
     background: #E5E7EB;
 }
 
 .action-time {
-    flex: 1 0 275px;
+    flex: 1 0 365px;
 }
 
 .footer {
     background: #1F2937;
-    flex: 0 0 80px;
+    flex: 0 0 110px;
 }
 
-/*********** center main containers vertically in each major section ****************/
+/*********** center main containers in each major section ****************/
 
 .header,
 .hero,
@@ -56,13 +53,40 @@ body {
 .action-time,
 .footer {
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-/************ stretch items of above containers across width of screen **************/ 
+/********** set space-between container width ***************************/
 
-.container {
-    flex: 1;
+.header .container,
+.hero .container,
+.action-time .container {
+    flex: 0 0 1025px;
+}
+
+/*********************************** buttons and links ********************/
+
+a {
+    text-decoration: none;
+    color: #F9FAF8;
+    font-size: 18px;
+}
+
+button {
+    font-weight: 600px;
+    background: #3882F6;
+    margin-top: 10px;
+    padding: 5px 25px;
+    border-radius: 10px;
+}
+
+a:hover {
+    color: #3882F6;
+}
+
+button a:hover{
+    color: #1F2937
 }
 
 /*********************************** header ******************************************/
@@ -71,7 +95,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    background: green;
 }
 
 .header .logo {
@@ -84,18 +107,12 @@ body {
     gap: 25px;
 }
 
-.header a {
-    text-decoration: none;
-    color: #F9FAF8;
-    font-size: 18px;
-}
 
 /*********************************** hero ******************************************/
 
 .hero .container {
     display: flex;
     justify-content: space-between;
-    background: green;
 }
 
 .hero .container .content {
@@ -106,7 +123,7 @@ body {
 
 .hero .container .content h1 {
     font-size: 48px;
-    font-weight: 800;
+    font-weight: 900;
 }
 
 .hero .container .content p {
@@ -116,26 +133,23 @@ body {
 .hero .container .content button {
     align-self: flex-start;
     border-color: #1F2937;
-    color: #F9FAF8;
 }
 
 .hero .container img {
     text-align: center;
     background: grey;
     height: 215px;
-    width: 575px;
+    width: 520px;
 }
 
 /*********************************** information ******************************************/
 
 .information .container {
-
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 25px;
+    gap: 50px;
     color: #1F2937;
-    background-color: green;
 }
 
 .information .container h2 {
@@ -146,7 +160,7 @@ body {
 .information .container .boxes {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 50px;
     flex-wrap: wrap;
 }
 
@@ -177,7 +191,6 @@ body {
     flex-direction: column;
     gap: 10px;
     color: #1F2937;
-    background: green;
 }
 
 .quote .testomonial {
@@ -197,20 +210,19 @@ body {
 
 
 .action-time .container {
-    /* height: 40%; */
-    /* padding: 0 150px; */
+    padding: 50px 80px;
     background: #3882F6;
     border-style: solid;
     border-color: #3882F6;
     border-radius: 8px;
     display: flex;
-    /* justify-content: space-between;
-    align-items: center; */
+    justify-content: space-between;
+    align-items: center;
 }
 
-.action-time .text {
-    /* display: flex;
-    flex-direction: column; */
+.action-time .text p {
+    font-size: 18px;
+
 }
 
 .action-time button {
@@ -220,27 +232,9 @@ body {
 
 /*********************************** footer ******************************************/
 
-
-.footer .container {
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    background: green;
+.footer .container p {
+    font-size: 18px;
 }
 
-button {
-    background: #3882F6;
-    color: #F9FAF8;
-    margin-top: 10px;
-    padding: 5px 25px;
-    border-radius: 10px;
-}
 
-a:hover {
-    color: #3882F6;
-}
-
-button a:hover{
-    color: #1F2937
-}
 
