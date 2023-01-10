@@ -62,7 +62,8 @@ body {
 .header .container,
 .hero .container,
 .action-time .container {
-    flex: 0 0 1025px;
+    flex: 0 1 1025px;
+    flex-wrap: wrap;
 }
 
 /*********************************** buttons and links ********************/
@@ -111,6 +112,7 @@ button a:hover{
 /*********************************** hero ******************************************/
 
 .hero .container {
+    flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
 }
